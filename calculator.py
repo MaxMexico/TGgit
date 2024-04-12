@@ -1,3 +1,5 @@
+"""test"""
+
 class Addition:
     """Cette classe représente une opération d'addition."""
     def __init__(self, a, b):
