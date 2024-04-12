@@ -1,39 +1,36 @@
-class addition:
+class Addition:
+    """Cette classe représente une opération d'addition."""
     def __init__(self, a, b):
+        """Initialise une instance de l'opération d'addition avec deux nombres."""
         self.a = a
         self.b = b
 
-    def addition(self):
+    def calculate(self):
+        """Effectue l'opération d'addition et retourne le résultat."""
         return self.a + self.b
     
 
-class soustraction:
+class Soustraction:
+    """Cette classe représente une opération de soustraction."""
     def __init__(self, a, b):
+        """Initialise une instance de l'opération de soustraction avec deux nombres."""
         self.a = a
         self.b = b
 
-    def soustraction(self):
+    def calculate(self):
+        """Effectue l'opération de soustraction et retourne le résultat."""
         return self.a - self.b
 
-class division:
+class Division:
+    """Cette classe représente une opération de division."""
     def __init__(self, a, b):
+        """Initialise une instance de l'opération de division avec deux nombres."""
         self.a = a
         self.b = b
 
-    def division(self):
-        return self.a / self.b
-    
-
-
-# def addition(a,b):
-#     result = a+b
-#     return result
-
-# def soustraction(a,b):
-#     result=a-b
-#     return result
-
-# def division(a,b):
-#     result=a/b
-#     return result
-    
+    def calculate(self):
+        """Effectue l'opération de division et retourne le résultat."""
+        if self.b != 0:
+            return self.a / self.b
+        else:
+            return "Impossible de diviser par zéro"
