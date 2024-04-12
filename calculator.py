@@ -8,7 +8,7 @@ class Addition:
     def calculate(self):
         """Effectue l'opération d'addition et retourne le résultat."""
         return self.a + self.b
-    
+
 
 class Soustraction:
     """Cette classe représente une opération de soustraction."""
@@ -32,5 +32,4 @@ class Division:
         """Effectue l'opération de division et retourne le résultat."""
         if self.b != 0:
             return self.a / self.b
-        else:
-            return "Impossible de diviser par zéro"
+        return "Impossible de diviser par zéro"
