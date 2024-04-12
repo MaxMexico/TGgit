@@ -2,11 +2,15 @@ from calculator import addition
 from calculator import soustraction
 from calculator import division
 
+
 def test_addition():
-    assert addition(1, 1) == 2
+    calc = addition(1, 1)
+    assert calc.addition() == 2
 
 def test_soustraction():
-    assert soustraction(1, 1) == 0
+    calc = soustraction(1, 1)
+    assert calc.soustraction() == 0
 
 def test_division():
-    assert division(4, 2) == 2
+    calc = division(4, 2)
+    assert calc.division() == 2
